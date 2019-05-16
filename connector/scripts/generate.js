@@ -19,13 +19,13 @@ function getRandomDate() {
     // aprox nr of days since 1950 untill 1970: 20years * 365 days
     var nr_days2 = -20*365;
 
-    // milliseconds in one day
-    var one_day=1000*60*60*24
+    // milliseconds in test day
+    var test_day=1000*60*60*24
 
     // get a random number of days passed between 1950 and 2000
     var days = getRandomInt(nr_days2, nr_days1);
 
-    return new Date(days*one_day)
+    return new Date(days*test_day)
 }
 
 var max = 100;
